@@ -1,0 +1,85 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #fffaf7;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 1rem 2rem;
+  background-color: #5c4023;
+  color: white;
+}
+
+.location-input {
+  margin-top: 1rem;
+}
+
+.location-input input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.menu, .cart {
+  flex: 1;
+  min-width: 300px;
+}
+
+.menu-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.menu-item, .cart-item {
+  background: #f4f4f4;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.menu-item h3 {
+  margin: 0.5rem 0;
+}
+
+.menu-item button {
+  margin-top: 0.5rem;
+  background: #5c4023;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.cart-total {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#checkout-btn {
+  margin-top: 1rem;
+  padding: 0.7rem;
+  background: #5c4023;
+  color: white;
+  border: none;
+  width: 100%;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
