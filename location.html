@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alfred Locations with Booking</title>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="location.css" />
+</head>
+<body>
+  <header>
+    <h1>Alfred Locations</h1>
+    <div class="city-filters">
+      <button data-city="all" class="active">All</button>
+      <button data-city="Goa">Goa</button>
+      <button data-city="Mumbai">Mumbai</button>
+      <button data-city="Bangalore">Bangalore</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="locations-list">
+      <ul id="locations"></ul>
+    </section>
+
+    <section class="map">
+      <div id="map">Map will appear here</div>
+    </section>
+  </main>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    crossorigin=""
+  ></script>
+  <script src="location.js"></script>
+</body>
+</html>
