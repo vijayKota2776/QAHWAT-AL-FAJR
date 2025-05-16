@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alfred Clone - Order</title>
+  <link rel="stylesheet" href="order.css" />
+</head>
+<body>
+  <header>
+    <h1>Order from Qahwat Al-Fajr</h1>
+    <div class="location-input">
+      <label for="location">Enter Your Location:</label>
+      <input type="text" id="location" placeholder="e.g. Los Angeles or Austin" />
+    </div>
+  </header>
+
+  <main>
+    <section class="menu">
+      <h2>Menu</h2>
+      <div id="menu-items" class="menu-items">
+        <!-- Menu items will be loaded here -->
+      </div>
+    </section>
+
+    <section class="cart">
+      <h2>Your Cart</h2>
+      <div id="cart-items"></div>
+      <div class="cart-total">
+        <strong>Total:</strong> $<span id="total-price">0.00</span>
+      </div>
+      <button id="checkout-btn" disabled>Checkout</button>
+    </section>
+  </main>
+
+  <script src="order.js"></script>
+</body>
+</html>
