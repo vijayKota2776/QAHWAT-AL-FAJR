@@ -1,0 +1,183 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f9f9;
+    color: #222;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header {
+    background: rgb(206, 165, 107);
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+  
+  .city-filters {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .city-filters button {
+    background: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    color: rgb(206, 165, 107);
+  }
+  
+  .city-filters button.active,
+  .city-filters button:hover {
+    background: rgb(206, 165, 107);
+    color: white;
+  }
+  
+  main {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    padding: 1rem 2rem;
+    height: calc(100vh - 120px);
+  }
+  
+  .locations-list {
+    width: 35%;
+    background: white;
+    border-radius: 10px;
+    overflow-y: auto;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    padding: 1rem;
+  }
+  
+  #locations {
+    list-style: none;
+  }
+  
+  .location-item {
+    padding: 1rem;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    border-radius: 8px;
+  }
+  
+  .location-item:hover,
+  .location-item.active {
+    background-color: #e8f5e9;
+    border-left: 4px solid rgb(206, 165, 107);
+    font-weight: 600;
+  }
+  
+  .location-name {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .location-address {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .map {
+    flex: 1;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+    overflow: hidden;
+  }
+  
+  #map {
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* Scrollbar for locations list */
+  .locations-list::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .locations-list::-webkit-scrollbar-thumb {
+    background-color: rgb(206, 165, 107);
+    border-radius: 20px;
+  }
+  
+  .locations-list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Booking form styles */
+  .booking-form {
+    background: #f0f9f0;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    margin-top: 10px;
+    display: none;
+  }
+  
+  .booking-form label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .booking-form input {
+    width: 100%;
+    padding: 6px;
+    margin-top: 2px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .booking-form button {
+    background-color: rgb(206, 165, 107);
+    border: none;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .booking-form button:hover {
+    background-color: rgb(206, 165, 107);
+  }
+  
+  .booking-confirmation {
+    color: rgb(206, 165, 107);
+    margin-top: 8px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      height: auto;
+    }
+    .locations-list {
+      width: 100%;
+      height: 250px;
+      margin-bottom: 1rem;
+    }
+    .map {
+      height: 60vh;
+    }
+  }
